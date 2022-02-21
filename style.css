@@ -2,20 +2,41 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Leckerli One', cursive;
+  font-size: 12px;
 }
 
-/* Colors
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: transparent;
+}
 
+/* Colors and fonts
 
+font-family: 'Leckerli One', cursive; // font
 background-color: rgb(255, 102, 2) // orange fill
-
+background-color: #fafafa; // background undernav/footer nav
+color: #777; // font color nav
 
 */
 
-/* Navbar */
+/* Start Navbar */
+/* .navbar li a {
+  border-radius: 10px 10px 10px 40px;
+} */
+
 .cross-logo {
   max-width: 30px;
   max-height: 30px;
+  float: left;
+}
+
+.cross-logotype {
+  float: left;
+  padding-top: 5px;
+  padding-left: 5px;
 }
 
 a.navbar-brand {
@@ -24,6 +45,8 @@ a.navbar-brand {
 
 .navbar {
   border-radius: 0;
+  border-bottom: 3px solid rgb(255, 102, 2);
+  margin-bottom: 0px;
 }
 
 .navbar-default .navbar-brand {
@@ -37,7 +60,42 @@ a.navbar-brand {
   background-color: rgb(255, 102, 2);
   font-weight: 900;
 }
+
+.caret {
+  margin-left: 10px;
+}
 /* End Navbar */
+
+/* Start under navbar */
+
+.undernav {
+  margin-top: 50px;
+  height: 40px;
+  width: 100%;
+  background-color: #fafafa;
+  text-align: center;
+  position: fixed;
+  z-index: 100;
+}
+
+.col-md-2 {
+  margin-top: 13px;
+  color: rgb(255, 102, 2);
+}
+
+.fa-car,
+.fa-print,
+.fa-file-text-o,
+.fa-map-marker {
+  margin-right: 5px;
+}
+
+.undernav a {
+  text-decoration: none;
+  color: rgb(255, 102, 2);
+}
+
+/* End under navbar */
 
 /* Start Modal */
 /* SISTEMARE L'HOVER DEL BUTTON SIGN-IN E PERSONALIZZARE IL MODAL */
@@ -58,8 +116,8 @@ a.navbar-brand {
   border-color: transparent;
 }
 
-.fa-sign-in {
-  transform: scale(0.8);
+.fa-search {
+  transform: scale(1.3);
 }
 
 .btn {
@@ -79,12 +137,18 @@ a.navbar-brand {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  margin-top: 4px;
+  margin-top: 6px;
+  margin-right: 5px;
 }
 
 .btn:hover {
   background-color: transparent;
   border-color: transparent;
+  color: rgb(255, 102, 2);
+}
+
+.btn:focus {
+  color: rgb(255, 102, 2);
 }
 
 .modal-content {
@@ -163,25 +227,35 @@ input {
 /* Start Carousel */
 
 .carousel-inner {
-  margin-top: 50px;
-  max-height: 400px;
+  height: 650px;
+  border-bottom: 3px solid rgb(255, 102, 2);
 }
 
 .carousel-indicators li {
   width: 50px;
+  height: 5px;
+  border: 3px solid rgb(255, 102, 2);
 }
 
 .carousel-indicators .active {
   background-color: rgb(255, 102, 2);
+  border-color: rgb(255, 102, 2);
   width: 50px;
 }
 
 .img-crs {
-  margin-top: -150px;
-  padding: auto;
+  position: relative;
+  top: -70px;
+}
+
+.glyphicon {
+  color: rgb(255, 102, 2);
+  position: relative;
+  top: 3px;
 }
 
 /* End Carousel */
+
 /* start Mid-Container */
 
 .row-container {
@@ -205,3 +279,123 @@ input {
   width: 200px;
   height: 200px;
 }
+
+/* End Mid Container */
+
+/* start divider 1 */
+
+.divider1 {
+  height: 40px;
+  width: 100%;
+}
+
+.more-to-know {
+  text-align: center;
+}
+
+/* end divider 1 */
+
+/* start mid-2-container */
+
+.mid-2-container {
+  height: 500px;
+  width: 100%;
+}
+
+.row-container2 {
+  height: 500px;
+}
+
+#md-12-mid2-container {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+#md-4-mid2-container {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+#md-4-mid2-container {
+  /* max-height: 400px;
+  max-width: 400px; */
+  /* height: 320px;
+  width: 350px; */
+  margin-top: 5%;
+  padding-left: 2%;
+}
+
+#md-8-mid2-container {
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.form-test-drive {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #fafafa;
+}
+
+.titolo-test-drive {
+  margin-bottom: 25px;
+  text-align: center;
+  color: rgb(255, 102, 2);
+}
+
+.btn-test-drive {
+  float: right;
+  background-color: transparent;
+  border: transparent;
+  color: rgb(255, 102, 2);
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+/* End mid-2-container */
+
+/*start mid-3-container */
+
+.mid-3-container {
+  height: 300px;
+  width: 100%;
+}
+
+/* Start Footer */
+
+.bottom {
+  background-color: #fafafa;
+}
+.bottom .copyright {
+  color: #e5e5e5;
+  font-weight: 600;
+}
+.copyright a {
+  color: #f2ff49;
+  margin-left: 3px;
+  padding-right: 3px;
+}
+.bottom p {
+  margin-bottom: 0;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.copyright p span {
+  color: #777;
+}
+.bottom .copyright p,
+.bottom .copyright a:hover {
+  color: #777;
+}
+
+.copyright a {
+  color: rgb(255, 102, 2);
+  font-size: 20px;
+}
+
+/* End Footer */
